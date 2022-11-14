@@ -3,7 +3,7 @@ Obtains an index of specified size length and returns it.
 
 # Usage
 
-https://go.dev/play/p/KzSjIei9_vL
+https://go.dev/play/p/vdWueuK-S31
 
 ```go
 package main
