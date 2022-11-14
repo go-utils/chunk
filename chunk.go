@@ -23,3 +23,11 @@ func GetIndex(length int, chunkSize int) <-chan Index {
 
 	return ch
 }
+
+// Chunking - chunking the slice
+func Chunking[T any](slice []T, chunkSize int) (chunked [][]T) {
+	for idx := range GetIndex(len(slice), chunkSize) {
+		chunked = append(chunked, slice[idx.From:idx.To])
+	}
+	return
+}
